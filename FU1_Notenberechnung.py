@@ -1,5 +1,5 @@
-def berechne_prozentwert(erreichte_punkte, gesamtpunkte):
-    return (erreichte_punkte / gesamtpunkte) * 100
+def berechne_prozentwert(erreichte_punkte, gesamtpunkte)-> int:
+    return int((erreichte_punkte / gesamtpunkte) * 100)
 
 def get_note(prozent):
     if prozent >= 92:
@@ -12,6 +12,7 @@ def get_note(prozent):
         return "ausreichend"
     else:
         return "mangelhaft"
-    
-print(berechne_prozentwert(51, 100))
-print(get_note(51))
+
+if(__name__ == "__main__"):   
+        print(berechne_prozentwert(51, 100))
+        print(get_note(51))
